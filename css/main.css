@@ -24,6 +24,10 @@
     padding: 2rem 1rem;
     color: white;
     background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
 }
 
 .sidebar img{
@@ -49,6 +53,7 @@
 
 .sidebar .details span{
     font-weight: 600;
+    letter-spacing: 1.2px;
 }
 
 .sidebar .details p{
@@ -78,6 +83,7 @@
 .content{
     flex: 1 1 0;
     padding: 2rem;
+    margin-left: 350px;
 }
 
 .content h1{
@@ -85,6 +91,118 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
+.slide-container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+}
+
+.slide-container .slides{
+    width: 100%;
+    height: calc(100% - 40px);
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-container .slides img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.slide-container .slides img:not(.active){
+    top: 0;
+    left: -100%;
+}
+
+span.next, span.prev{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    padding: 14px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    transform: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+span.next{
+    right: 20px;
+}
+
+span.prev{
+    left: 20px;
+}
+
+span.next:hover, span.prev:hover{
+    color: red;
+}
+
+.dots-container{
+    position: absolute;
+    bottom: 5px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dots-container .dot{
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dots-container .active{
+    background-color: black;
+}
+
+@keyframes next1{
+    from{
+        left: 0%
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes next2{
+    from{
+        left: 100%
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes prev1{
+    from{
+        left: 0%
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes prev2{
+    from{
+        left: -100%
+    }
+    to{
+        left: 0%;
+    }
+}
+
+/* menu toggle */
 
 .menu-toggle{
     display: none;
@@ -146,6 +264,9 @@
     .sidebar{
         max-width: 200px;
     }
+    .content{
+        margin-left: 200px;
+    }
 }
 
 @media (max-width: 768px){
@@ -154,6 +275,7 @@
     }
     .content{
         padding-top: 8rem;
+        margin-left: 0;
     }
     .sidebar{
         position: fixed;
@@ -163,6 +285,7 @@
         width: 100%;
         max-width: 300px;
         transition: 0.2s linear;
+        z-index: 2;
     }
     .sidebar.is-active{
         left: 0;
