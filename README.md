@@ -1,1 +1,1 @@
-# Wah-Fu-Church
+# Wah-Fu-Church-Of-Christ
