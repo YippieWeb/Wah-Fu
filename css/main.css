@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
 /* font-family: 'Noto Sans TC', sans-serif; */
 
+/* colour palette */
+/* */
+
 
 *{
     margin: 0;
@@ -22,8 +25,8 @@
     flex: 1 1 0;
     max-width: 350px;
     padding: 2rem 1rem;
-    color: white;
-    background-color: black;
+    color: #e8eddf;
+    background-color: #242423;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -69,34 +72,33 @@
 .sidebar .menu .menu-item{
     display: block;
     padding: 1em;
-    color: grey;
+    color: #cfdbd5;
     text-decoration: none;
     transition: 0.2s linear;
 }
 
 .sidebar .menu .menu-item:hover,
 .sidebar .menu .menu-item.is-active{
-    color: white;
-    border-right: 5px solid white;
+    color: #f5cb5c;
+    border-right: 5px solid #f5cb5c;
 }
 
 .content{
     flex: 1 1 0;
     padding: 2rem;
     margin-left: 350px;
+    color: #242423;
+    line-height: 2rem;
 }
 
 .content h1{
-    color: grey;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    line-height: 5rem;
 }
 
 .slide-container{
     position: relative;
     width: 100%;
-    height: 500px;
-    margin: auto;
+    height: 80%;
 }
 
 .slide-container .slides{
@@ -123,7 +125,7 @@ span.next, span.prev{
     top: 45%;
     transform: translateY(-50%);
     padding: 14px;
-    color: white;
+    color: transparent;
     font-size: 24px;
     font-weight: 700;
     transform: 0.5s;
@@ -141,9 +143,9 @@ span.prev{
     left: 20px;
 }
 
-span.next:hover, span.prev:hover{
+/* span.next:hover, span.prev:hover{
     color: red;
-}
+} */
 
 .dots-container{
     position: absolute;
@@ -157,14 +159,14 @@ span.next:hover, span.prev:hover{
     width: 10px;
     height: 10px;
     margin: 0 2px;
-    border: 2px solid black;
+    border: 2px solid #242423;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .dots-container .active{
-    background-color: black;
+    background-color: #242423;
 }
 
 @keyframes next1{
@@ -212,7 +214,7 @@ span.next:hover, span.prev:hover{
     width: 60px;
     height: 60px;
     border-radius: 99px;
-    background-color: black;
+    background-color: #242423;
     cursor: pointer;
 }
 
@@ -232,7 +234,7 @@ span.next:hover, span.prev:hover{
     width: 100%;
     height: 4px;
     border-radius: 99px;
-    background-color: white;
+    background-color: #e8eddf;
     transition-duration: .25s;
 }
 
@@ -285,9 +287,25 @@ span.next:hover, span.prev:hover{
         width: 100%;
         max-width: 300px;
         transition: 0.2s linear;
-        z-index: 2;
+        z-index: 4;
     }
     .sidebar.is-active{
         left: 0;
+    }
+}
+
+@media (max-width: 480px){
+    .slide-container{
+        position: relative;
+        width: 100%;
+        height: 40%;
+    }
+    .content h1{
+        font-size: 1.2rem;
+        line-height: 4rem;
+    }
+    .content p{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
     }
 }
