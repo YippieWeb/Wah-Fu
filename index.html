@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wah Fu Church of Christ</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="app">
+
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="assets/wah-fu-logo-white.png" alt="">
+                <p>基督教會</p>
+            </div>
+
+            <div class="details">
+                <span>聚會時間 Service</span>
+                <p>星期日 上午十時正</p>
+                <p>Sunday 10:00 am</p><br>
+
+                <span>聯絡我們 Contact</span>
+                <p>地址: 香港華富村華基樓618-619室</p>
+                <p>Address: Room 618-619, Wah Kee House, Wah Fu Estate, Hong Kong</p>
+                <p>電話: 2551-3682</p>
+                <p>傳真: 2551-0033</p>
+                <p>電郵: info@wahfucoc.org.hk</p>
+            </div>
+
+            <hr>
+
+            <nav class="menu">
+                <a href="#" class="menu-item is-active">主頁</a>
+                <a href="#" class="menu-item">宗旨歷史</a>
+                <a href="#" class="menu-item">聚會地點</a>
+                <a href="#" class="menu-item">主日崇拜</a>
+                <a href="#" class="menu-item">週五查經班</a>
+                <a href="#" class="menu-item">照片集</a>
+                <a href="#" class="menu-item">週訊</a>
+                <a href="#" class="menu-item">聖經課程</a>
+                <a href="#" class="menu-item">信仰小冊</a>
+                <a href="#" class="menu-item">鏈接</a>
+                <a href="#" class="menu-item">其他教會/團體消息</a>
+            </nav>
+
+            <!-- <div class="notice">
+                <span>教會通告</span>
+                <p>查經班 代下32-34 Eric (延期舉行，另行通告)</p>
+                <a href="">本期週訊</a>
+            </div> -->
+
+        </aside>
+
+        <main class="content">
+            <h1>Welcome</h1>
+        </main>
+    </div>
+
+    <script>
+        const menu_toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle('is-active');
+            sidebar.classList.toggle('is-active');
+        })
+    </script>
+</body>
+</html>
