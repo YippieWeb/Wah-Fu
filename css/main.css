@@ -257,6 +257,7 @@ span.prev{
     border-radius: 99px;
     background-color: #242423;
     cursor: pointer;
+    z-index: 5;
 }
 
 .hamburger{
