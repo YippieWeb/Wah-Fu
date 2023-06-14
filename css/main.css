@@ -370,6 +370,26 @@ iframe{
     min-height: 500px;
 }
 
+/* address & maps */
+.address h2{
+    line-height: 2.5rem;
+}
+
+.chapter{
+    padding-bottom: 10px;
+}
+
+.map{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.gmap{
+    width: 100%;
+    border: 0;
+}
+
 @media (max-width: 1024px){
     .sidebar{
         max-width: 200px;
@@ -390,6 +410,12 @@ iframe{
     }
     .content{
         margin-left: 200px;
+    }
+    .map{
+        display: block;
+    }
+    .gmap{
+        padding-bottom: 20px;
     }
 }
 
