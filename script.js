@@ -1,3 +1,8 @@
+// strip ".html" (or "index.html" for index page) from URL
+var currentUrl = window.location.href;
+var cleanUrl = currentUrl.replace('index.html', '').replace('.html', '');
+window.history.replaceState({}, document.title, cleanUrl);
+
 // menu toggle
 
 const menu_toggle = document.querySelector('.menu-toggle');
