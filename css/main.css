@@ -35,6 +35,12 @@ a:hover{
     color: #f5cb5c;
 }
 
+hr {
+    border: none;
+    border-top: 0.5px solid;
+    margin: 40px 0;
+}
+
 .app{
     display: flex;
     min-height: 100vh;
@@ -95,12 +101,6 @@ a:hover{
 .sidebar .details i.fa-brands{
     line-height: 4rem;
     font-size: 2rem;
-}
-
-.sidebar hr {
-    border: none;
-    border-top: 0.5px solid;
-    margin: 40px 0;
 }
 
 .sidebar .menu .menu-item{
@@ -394,6 +394,10 @@ iframe.youtube{
     width: 150px;
     height: fit-content;
     margin-top: 0;
+}
+
+.hymnal .item img{
+    width: 100%;
 }
 
 .hymnal .item .title{
