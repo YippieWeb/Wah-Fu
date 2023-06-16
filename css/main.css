@@ -172,7 +172,7 @@ span.copyright a{
 .slide-container{
     position: relative;
     width: 90%;
-    height: 500px;
+    height: 550px;
     margin: auto;
 }
 
@@ -194,9 +194,10 @@ span.copyright a{
     width: 90%;
     margin: auto;
 }
+
 .img-container img{
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -529,9 +530,8 @@ iframe.youtube{
         letter-spacing: 2px;
         transform: translate(0, 50%);
     }
-    .slide-container{
+    .slide-container, .img-container img{
         position: relative;
-        width: 100%;
         height: 500px;
     }
     iframe.youtube{
@@ -542,8 +542,10 @@ iframe.youtube{
 @media (max-width: 480px){
     .slide-container{
         position: relative;
-        width: 100%;
         height: 300px;
+    }
+    .img-container img{
+        height: 250px;
     }
     h1, h2{
         font-size: 1.2rem;
@@ -565,6 +567,16 @@ iframe.youtube{
     }
     .hymnal .item{
         width: 250px;
+    }
+}
+
+@media (max-width: 480px){
+    .slide-container{
+        position: relative;
+        height: 250px;
+    }
+    .img-container img{
+        height: 200px;
     }
 }
 
