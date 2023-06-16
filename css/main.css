@@ -532,22 +532,35 @@ iframe.youtube{
         letter-spacing: 2px;
         transform: translate(0, 50%);
     }
-    .slide-container, .img-container img{
-        position: relative;
+    .slide-container{
         height: 500px;
+    }
+    .img-container img{
+        height: 450px;
+    }
+    .slide-container, .img-container{
+        padding-top: 0;
     }
     iframe.youtube{
         min-height: 300px;
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 640px){
     .slide-container{
-        position: relative;
-        height: 300px;
+        height: 400px;
     }
     .img-container img{
-        height: 250px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px){
+    .slide-container{
+        height: 350px;
+    }
+    .img-container img{
+        height: 300px;
     }
     h1, h2{
         font-size: 1.2rem;
@@ -574,7 +587,6 @@ iframe.youtube{
 
 @media (max-width: 480px){
     .slide-container{
-        position: relative;
         height: 250px;
     }
     .img-container img{
