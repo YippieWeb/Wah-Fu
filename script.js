@@ -12,7 +12,7 @@
 
 // lang switch 2.0
 // get the base URL
-var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, '') + '/WahFuCoC';
+var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, '');
 
 // function to switch language
 function switchLanguage(lang) {
