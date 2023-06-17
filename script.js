@@ -1,7 +1,28 @@
 // language switch
 // get the base URL
-// var baseUrl = window.location.href.replace(/\/$/, ''); (zh->en works, en->zh should extra /index.html)
-var baseUrl = window.location.href.replace(/\/(en|zh)\/index.html$/, '/WahFuCoC');
+// var baseUrl = window.location.href.replace(/\/$/, ''); (zh->en works, en->zh has extra /index.html)
+// var baseUrl = window.location.href.replace(/\/(en|zh)\/index.html$/, '/WahFuCoC'); (en->zh has extra WahFuCoC)
+var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, '/WahFuCoC');
+
+// Function to switch language
+function switchLanguage(lang) {
+  // Set the target URL based on the selected language
+  var targetUrl;
+  if (lang === 'en') {
+    targetUrl = baseUrl + '/en/';
+  } else {
+    targetUrl = baseUrl + '/';
+  }
+
+  // Redirect to the target URL
+  window.location.href = targetUrl;
+}
+
+// Language switch event handler
+$('.lang').on('click', function() {
+  var selectedLanguage = $(this).hasClass('en') ? 'en' : 'zh';
+  switchLanguage(selectedLanguage);
+});
 
 
 // function to switch language
