@@ -5,25 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wah Fu Church of Christ</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <script src="https://kit.fontawesome.com/10f9b17392.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
     <div class="app">
-
         <div class="menu-toggle">
             <div class="hamburger">
                 <span></span>
             </div>
         </div>
-
         <aside class="sidebar">
             <div class="logo">
-                <img src="assets/wah-fu-logo-white.png" alt="">
+                <img src="../assets/wah-fu-logo-white.png" alt="">
                 <p>基督教會</p>
             </div>
-
+            <!-- main nav tabs -->
             <nav class="menu">
                 <a href="index.html" class="menu-item is-active">主頁</a>
                 <a href="purpose.html" class="menu-item">宗旨歷史</a>
@@ -38,27 +36,25 @@
                 <a href="#" class="menu-item">鏈接</a>
                 <a href="#" class="menu-item">其他教會/團體消息</a>
             </nav>
+            <!-- lang switch -->
             <div class="language"><i class="fa-solid fa-earth-americas"></i>
-                <span class="lang cn">中文</span>
+                <span class="lang zh is-active">中文</span>
                 <span class="lang en">EN</span>
             </div>
-            <hr>
+            <hr> <!-- line break -->
+            <!-- main nav tabs -->
             <div class="details">
-                <span>聚會時間 Service</span>
-                <p>星期日 上午十時正</p>
-                <p>Sunday 10:00 am</p><br>
-
-                <span>聯絡我們 Contact</span>
+                <span>聚會時間</span>
+                <p>星期日 上午十時正</p><br>
+                <span>聯絡我們</span>
                 <p>地址: 香港華富村華基樓618-619室</p>
-                <p>Address: Room 618-619, Wah Kee House, Wah Fu Estate, Hong Kong</p>
                 <p>電話: 2551-3682</p>
                 <p>傳真: 2551-0033</p>
                 <p>電郵: info@wahfucoc.org.hk</p>
                 <a href="https://www.facebook.com/WahFuCOC/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://youtu.be/Bpt0TBb3ZpY" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 <br><br>
-
-                <span>教會通告 Notice</span>
+                <span>教會通告</span>
                 <p>查經班 代下32-34 Eric (延期舉行，另行通告)</p>
                 <a href="">本期週訊 &nbsp&nbsp<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
@@ -67,27 +63,24 @@
             <span class="copyright"><a href="https://www.linkedin.com/in/jasmine-yyy/" target="_blank">Jasmine Yip</a> 
                 @ <a href="https://github.com/YippieWeb/" target="_blank">Yippie Web</a> 開發</span>
         </aside>
-
         <main class="content">
             <div class="logo">
                 <img src="assets/wah-fu-logo-black.png" alt="">
                 <p>基督教會</p>
             </div>
-
+            <!-- carousel -->
             <div class="slide-container">
                 <div class="slides">
-                    <img src="assets/50yrs-gathering.jpeg" class="slide active" alt="">
-                    <img src="assets/annual-gathering.jpeg" class="slide" alt="">
-                    <img src="assets/mothers-day.jpeg" class="slide" alt="">
-                    <img src="assets/barbeque.jpeg" class="slide" alt="">
-                    <img src="assets/youth-camp.jpeg" class="slide" alt="">
+                    <img src="../assets/50yrs-gathering.jpeg" class="slide active" alt="">
+                    <img src="../assets/annual-gathering.jpeg" class="slide" alt="">
+                    <img src="../assets/mothers-day.jpeg" class="slide" alt="">
+                    <img src="../assets/barbeque.jpeg" class="slide" alt="">
+                    <img src="../assets/youth-camp.jpeg" class="slide" alt="">
                 </div>
-
                 <div class="buttons">
                     <span class="next">&#10095;</span>
                     <span class="prev">&#10094;</span>
                 </div>
-
                 <div class="dots-container">
                     <div class="dot active" attr='0' onclick="switchImage(this)"></div>
                     <div class="dot" attr='1' onclick="switchImage(this)"></div>
@@ -100,19 +93,9 @@
                 <h1>歡迎您來到我們的網站！</h1>
                 <p>我們是一群基督徒，每星期日早上在華富基督教會崇拜、事奉及讚美我們的救主──耶穌基督。<br>
                     誠意邀請您，參加我們的聚會，一起尋覓生命的意義。</p><br>
-                <h1>Welcome to our website!</h1>
-                <p>We are a church of Christ worshiping in Wah Fu Estate, Hong Kong.  We meet every Sunday.  
-                    Our Sunday service includes praying, singing (a capella), reading Scriptures, preaching 
-                    and taking the Lord’s Supper.  Service begins at 10am and usually lasts for an hour.  
-                    Bible class for all ages begins at 11:45 and usually lasts for half an hour.<br><br>
-
-                <p>You are welcome to worship with us.  Currently we only have Sunday service in Cantonese.  
-                    We may be able to provide translation if available.  If you would like to worship in English, 
-                    you may contact either the Wanchai Church of Christ or the Yuen Long Church of Christ, who have services 
-                    in English.  If you need any help, feel free to contact us at any time!</p><br><br>
             </div>
         </main>
     </div>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
