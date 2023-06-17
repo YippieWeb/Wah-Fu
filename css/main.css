@@ -590,10 +590,10 @@ iframe.youtube{
 
 @media (max-width: 480px){
     .slide-container{
-        height: 350px;
+        height: 300px;
     }
     .img-container img{
-        height: 300px;
+        height: 250px;
     }
     h1, h2{
         font-size: 1.2rem;
