@@ -3,6 +3,26 @@ var currentUrl = window.location.href;
 var cleanUrl = currentUrl.replace('index.html', '').replace('.html', '');
 window.history.replaceState({}, document.title, cleanUrl);
 
+// language switch
+function switchLanguage(lang) {
+    var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, ''); // get the base URL
+    var url;
+    if (lang === 'en') {
+      url = '/en/index.html';
+    } else {
+      url = '/zh/index.html';
+    }
+    window.location.href = url; // redirect to the respective folder's index.html
+  }
+
+  // usage
+  $(document).ready(function() {
+    $('.lang').on('click', function() {
+      var selectedLanguage = $(this).hasClass('en') ? 'en' : 'zh';
+      switchLanguage(selectedLanguage);
+    });
+  });
+
 // menu toggle
 
 const menu_toggle = document.querySelector('.menu-toggle');
