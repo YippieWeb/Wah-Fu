@@ -12,12 +12,20 @@
 
 // lang switch 2.0
 // get the base URL
-var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, '');
+var baseUrl = window.location.href.replace(/\/$/, '');
 
 // function to switch language
 function switchLanguage(lang) {
-  // redirect to the corresponding language folder
-  window.location.href = baseUrl + '/' + lang + '/index.html';
+  // set the target URL based on the selected language
+  var targetUrl;
+  if (lang === 'en') {
+    targetUrl = baseUrl + '/en/index.html';
+  } else {
+    targetUrl = baseUrl + '/index.html';
+  }
+
+  // redirect to the target URL
+  window.location.href = targetUrl;
 }
 
 // language switch event handler
