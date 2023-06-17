@@ -1,14 +1,30 @@
 // language switch
+// function switchLanguage(lang) {
+//     var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, ''); // get the base URL
+//     var url;
+//     if (lang === 'en') {
+//       url = baseUrl + 'WahFuCoC' + '/en/index.html';
+//     } else {
+//       url = baseUrl + 'WahFuCoC' + '/index.html';
+//     }
+//     window.location.href = url; // redirect to the respective folder's index.html
+//   }
+
+// lang switch 2.0
+// get the base URL
+var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, '') + '/WahFuCoC';
+
+// function to switch language
 function switchLanguage(lang) {
-    var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, ''); // get the base URL
-    var url;
-    if (lang === 'en') {
-      url = baseUrl + '/en/index.html';
-    } else {
-      url = baseUrl + '/index.html';
-    }
-    window.location.href = url; // redirect to the respective folder's index.html
-  }
+  // redirect to the corresponding language folder
+  window.location.href = baseUrl + '/' + lang + '/index.html';
+}
+
+// language switch event handler
+$('.lang').on('click', function() {
+  var selectedLanguage = $(this).hasClass('en') ? 'en' : 'zh';
+  switchLanguage(selectedLanguage);
+});
 
 // strip ".html" (or "index.html" for index page) from URL
 var currentUrl = window.location.href;
