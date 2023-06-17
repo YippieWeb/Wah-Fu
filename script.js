@@ -1,19 +1,19 @@
-// strip ".html" (or "index.html" for index page) from URL
-var currentUrl = window.location.href;
-var cleanUrl = currentUrl.replace('index.html', '').replace('.html', '');
-window.history.replaceState({}, document.title, cleanUrl);
-
 // language switch
 function switchLanguage(lang) {
     var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, ''); // get the base URL
     var url;
     if (lang === 'en') {
-      url = '/en/index.html';
+      url = baseUrl + '/en/index.html';
     } else {
-      url = '/zh/index.html';
+      url = baseUrl + '/index.html';
     }
     window.location.href = url; // redirect to the respective folder's index.html
   }
+
+// strip ".html" (or "index.html" for index page) from URL
+var currentUrl = window.location.href;
+var cleanUrl = currentUrl.replace('index.html', '').replace('.html', '');
+window.history.replaceState({}, document.title, cleanUrl);
 
   // usage
   $(document).ready(function() {
