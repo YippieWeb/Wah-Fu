@@ -1,18 +1,8 @@
 // language switch
-// function switchLanguage(lang) {
-//     var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, ''); // get the base URL
-//     var url;
-//     if (lang === 'en') {
-//       url = baseUrl + 'WahFuCoC' + '/en/index.html';
-//     } else {
-//       url = baseUrl + 'WahFuCoC' + '/index.html';
-//     }
-//     window.location.href = url; // redirect to the respective folder's index.html
-//   }
-
-// lang switch 2.0
 // get the base URL
-var baseUrl = window.location.href.replace(/\/$/, '');
+// var baseUrl = window.location.href.replace(/\/$/, ''); (zh->en works, en->zh should extra /index.html)
+var baseUrl = window.location.href.replace(/\/(en|zh)\/index.html$/, '/WahFuCoC');
+
 
 // function to switch language
 function switchLanguage(lang) {
