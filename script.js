@@ -1,49 +1,19 @@
-// language switch
-// get the base URL
-// var baseUrl = window.location.href.replace(/\/$/, ''); (zh->en works, en->zh has extra /index.html)
-// var baseUrl = window.location.href.replace(/\/(en|zh)\/index.html$/, '/WahFuCoC'); (en->zh has extra WahFuCoC)
-var baseUrl = window.location.href.replace(/\/[^\/]*\/?$/, '/WahFuCoC');
-
-// Function to switch language
-function switchLanguage(lang) {
-  // Set the target URL based on the selected language
-  var targetUrl;
-  if (lang === 'en') {
-    targetUrl = baseUrl + '/en/';
-  } else {
-    targetUrl = baseUrl + '/';
-  }
-
-  // Redirect to the target URL
-  window.location.href = targetUrl;
-}
-
-// Language switch event handler
-$('.lang').on('click', function() {
-  var selectedLanguage = $(this).hasClass('en') ? 'en' : 'zh';
-  switchLanguage(selectedLanguage);
-});
-
-
-// function to switch language
-function switchLanguage(lang) {
-  // set the target URL based on the selected language
-  var targetUrl;
-  if (lang === 'en') {
-    targetUrl = baseUrl + '/en/index.html';
-  } else {
-    targetUrl = baseUrl + '/index.html';
-  }
-
-  // redirect to the target URL
-  window.location.href = targetUrl;
-}
-
-// language switch event handler
-$('.lang').on('click', function() {
-  var selectedLanguage = $(this).hasClass('en') ? 'en' : 'zh';
-  switchLanguage(selectedLanguage);
-});
+// language switch function
+document.addEventListener('DOMContentLoaded', function() {
+    const enLangSpan = document.querySelector('.lang.en');
+    const zhLangSpan = document.querySelector('.lang.zh');
+  
+    enLangSpan.addEventListener('click', function() {
+      //   window.location.href = 'http://127.0.0.1:5500/en/';
+      window.location.href = 'https://yippieweb.github.io/WahFuCoC/en/';
+    });
+  
+    zhLangSpan.addEventListener('click', function() {
+      const currentURL = window.location.href;
+      const baseUrl = currentURL.replace('/en/', '/');
+      window.location.href = baseUrl;
+    });
+  });
 
 // strip ".html" (or "index.html" for index page) from URL
 var currentUrl = window.location.href;
