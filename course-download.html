@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wah Fu Church of Christ</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/10f9b17392.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="assets/wah-fu-logo-white.png" alt="">
+                <p>基督教會</p>
+            </div>
+            <!-- main nav tabs -->
+            <nav class="menu">
+                <a href="index.html" class="menu-item">主頁</a>
+                <a href="purpose.html" class="menu-item">宗旨歷史</a>
+                <a href="chapters.html" class="menu-item">聚會地點</a>
+                <a href="worship.html" class="menu-item">主日崇拜</a>
+                <a href="sunday-school.html" class="menu-item">主日學</a>
+                <a href="https://www.dropbox.com/sh/dcx134jvpo5c6c2/AAACBL1xhzI0lvnG2eVYcCPEa" target="_blank" class="menu-item">照片集</a>
+                <a href="correspondence.html" class="menu-item">聖經課程</a>
+                <a href="course-download.html" class="menu-item is-active">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-arrow-right"></i>&nbsp;&nbsp; 課程下載</a>
+                <a href="#" class="menu-item">信仰小冊</a>
+                <a href="#" class="menu-item">鏈接</a>
+                <a href="#" class="menu-item">其他教會/團體消息</a>
+            </nav>
+            <!-- lang switch -->
+            <div class="language"><i class="fa-solid fa-earth-americas"></i>
+                <span class="lang zh is-active">中文</span>
+                <span class="lang en">EN</span>
+            </div>
+            <hr> <!-- line break -->
+            <!-- main nav tabs -->
+            <div class="details">
+                <span>聚會時間</span>
+                <p>星期日 上午十時正</p><br>
+                <span>聯絡我們</span>
+                <p>地址: 香港華富村華基樓618-619室</p>
+                <p>電話: 2551-3682</p>
+                <p>傳真: 2551-0033</p>
+                <p>電郵: info@wahfucoc.org.hk</p>
+                <a href="https://www.facebook.com/WahFuCOC/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://youtu.be/Bpt0TBb3ZpY" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <br><br>
+                <span>教會通告</span>
+                <p>查經班 代下32-34 Eric (延期舉行，另行通告)</p>
+                <a href="">本期週訊 &nbsp&nbsp<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <hr>
+            <span class="copyright">華富基督教會 © 2012-2023</span><br>
+            <span class="copyright"><a href="https://www.linkedin.com/in/jasmine-yyy/" target="_blank">Jasmine Yip</a> 
+                @ <a href="https://github.com/YippieWeb/" target="_blank">Yippie Web</a> 開發</span>
+        </aside>
+        <main class="content">
+            <div class="logo">
+                <img src="assets/wah-fu-logo-black.png" alt="">
+                <p>基督教會</p>
+            </div>
+            <div class="main-content">
+                <h1>課程下載</h1>
+                <p>請按下列鏈接下載，或點擊右鍵另存新檔。</p>
+                <p>完成後請用電郵寄回，或郵寄到下址。</p>
+                <p>電郵: <a href=mailto:info@wahfucoc.org.hk?subject target="_blank">info@wahfucoc.org.hk</a></p>
+                <p>郵寄地址/Address: </p>
+                <p>香港華富村華基樓618-619室，華富基督教會</p>
+                <p>Wah Fu Church of Christ, Room 618-619, Wah Kee House, Wah Fu Estate, Hong Kong</p><br>
+                <p>** 本課程另有英文版，並可在網上完成，請按此取得</p>
+                <a class="btn var-1" href="http://www.bellviewcoc.com/bbc.php" target="_blank">英文版</a><br><br>
+
+                <!-- use js to generate clickable lesson list -->
+                <ul class="lesson-list" id="lessonList"></ul>
+                <script src="js/lesson.js"></script>
+                
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
