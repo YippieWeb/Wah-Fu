@@ -13,6 +13,7 @@
 /* colour palette */
 /* darker grey - #cfdbd5 */
 /* lighter grey - #e8eddf */
+/* super light grey - #f8f8f8 */
 /* yellow - #f5cb5c */
 /* darker black - #242423 */
 /* lighter black - #333533 */
@@ -430,13 +431,48 @@ iframe.youtube{
     padding-bottom: 20px;
 }
 
-
 .hymnal .item p{
     text-align: left;
 }
 
 .hymnal .item li{
     font-weight: 300;
+}
+
+/* correspondance course grfd */
+.item-container.correspondence{
+    grid-template-columns: repeat(auto-fit, 350px);
+}
+
+.correspondence .item{
+    width: 350px;
+    height: fit-content;
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+.correspondence .item p.title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* lesson list */
+.lesson-list{
+    list-style-type: none;
+}
+
+.lesson-list li{
+    padding: 10px 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    color: #333533;
+}
+
+.lesson-list li:hover{
+    background-color: #333533;
+    color: #f8f8f8;
+    transition: background-color 0.3s ease;
 }
 
 /* address & maps */
@@ -590,10 +626,10 @@ iframe.youtube{
 
 @media (max-width: 480px){
     .slide-container{
-        height: 300px;
+        height: 250px;
     }
     .img-container img{
-        height: 250px;
+        height: 200px;
     }
     h1, h2{
         font-size: 1.2rem;
