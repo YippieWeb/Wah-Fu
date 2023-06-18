@@ -654,4 +654,14 @@ iframe.youtube{
     }
 }
 
+@media (max-width: 375px){
+    .item-container.correspondence{
+        grid-template-columns: repeat(auto-fit, 280px);
+    }
+    
+    .correspondence .item{
+        width: 280px;
+}
+
+
 
