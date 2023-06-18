@@ -654,14 +654,23 @@ iframe.youtube{
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 390px){
     .item-container.correspondence{
         grid-template-columns: repeat(auto-fit, 280px);
     }
     
     .correspondence .item{
         width: 280px;
+    }
 }
 
-
+@media (max-width: 320px){
+    .item-container.correspondence{
+        grid-template-columns: repeat(auto-fit, 250px);
+    }
+    
+    .correspondence .item{
+        width: 200px;
+    }
+}
 
