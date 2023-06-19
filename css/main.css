@@ -27,6 +27,10 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+h2{
+    line-height: 2.5rem;
+}
+
 p{
     font-weight: 300;
 }
@@ -476,10 +480,6 @@ iframe.youtube{
 }
 
 /* address & maps */
-.address h2{
-    line-height: 2.5rem;
-}
-
 .name{
     padding-bottom: 10px;
 }
@@ -633,7 +633,7 @@ iframe.youtube{
     }
     h1, h2{
         font-size: 1.2rem;
-        line-height: 4rem;
+        line-height: 0rem;
     }
     .dots-container .dot{
         width: 8px;
