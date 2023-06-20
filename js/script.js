@@ -4,8 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const zhLangSpan = document.querySelector('.lang.zh');
   
     enLangSpan.addEventListener('click', function() {
-    //   window.location.href = 'http://127.0.0.1:5500/en/';
-      window.location.href = 'https://yippieweb.github.io/WahFuCoC/en/';
+         // local server
+         // window.location.href = 'http://127.0.0.1:5500/en/';
+         // github
+         window.location.href = 'https://yippieweb.github.io/WahFuCoC/en/';
+         // prod 
+         // window.location.href = 'http://wahfucoc.org.hk/blog/en/';
     });
   
     zhLangSpan.addEventListener('click', function() {
