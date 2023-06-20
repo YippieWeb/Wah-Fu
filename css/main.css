@@ -574,7 +574,7 @@ iframe.youtube{
     list-style-type: none;
  }
   .nav__list input[type=checkbox]:checked + label + ul { /* reset the height when checkbox is checked */
-  max-height: 1000px; }
+  max-height: 1500px; }
 
   label > span {
     float: right;
