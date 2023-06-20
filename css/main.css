@@ -517,6 +517,7 @@ iframe.youtube{
     padding: 8px 15px;
     font-size: .8rem;
     margin-right: 8px;
+    margin-bottom: 10px;
 }
 
 /* button */
@@ -656,6 +657,12 @@ label > span{
     }
     .locations h1{
         padding: 45px 0 20px 0;
+    }
+    .locations h2{
+        line-height: 2.5rem;
+    }
+    .locations h2.last{
+        padding-bottom: 10px;
     }
 }
 
