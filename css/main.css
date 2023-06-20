@@ -37,6 +37,7 @@ p{
 
 a{
     color: #333533;
+    font-weight: 300;
 }
 
 a:hover{
@@ -468,14 +469,13 @@ iframe.youtube{
 .lesson-list li{
     padding: 10px 30px;
     background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     margin-bottom: 10px;
     color: #333533;
 }
 
 .lesson-list li:hover{
-    background-color: #333533;
-    color: #f8f8f8;
+    background-color: #f5cb5c;
     transition: background-color 0.3s ease;
 }
 
@@ -502,7 +502,7 @@ iframe.youtube{
 }
 
 /* button */
-.btn.var-1 {
+.btn.var-1{
     display: inline-block;
     margin: 20px 0;
     padding: 10px 20px;
@@ -513,7 +513,81 @@ iframe.youtube{
     transition: background-color 0.3s ease;
   }
 
-  .btn.var-1:hover {
+  .btn.var-1:hover{
+    background-color: #f5cb5c;
+  }
+
+/* accordion */
+.nav a, .nav label{
+    display: block;
+    padding: 10px 30px;
+    color: #333533;
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    -webkit-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    text-decoration: none;
+  }
+  .nav a:focus, .nav a:hover, .nav label:focus, .nav label:hover{
+    /* color: #f8f8f8;
+    background: #333533; */
+    color: #333533;
+    background: #eee;
+  }
+  .nav label{ 
+    cursor: pointer; 
+  }
+  span.fa.fa-angle-right {
+    padding-top: .8rem;
+    transform: translate(0, -20%);
+  }
+  li.nav__list__item {
+    padding-bottom: 10px;
+  }
+  /**
+ * Styling first level lists items
+ */
+.group-list a, .group-list label{
+    padding-left: 2rem;
+    background: #f8f8f8;
+  }
+  .group-list a:focus, .group-list a:hover, .group-list label:focus, .group-list label:hover { background: #eee; }
+  /**
+   * Styling second level list items
+   */
+  .sub-group-list a, .sub-group-list label{
+    padding-left: 4rem;
+    background: #f8f8f8;
+  }
+  .sub-group-list a:focus, .sub-group-list a:hover, .sub-group-list label:focus, .sub-group-list label:hover { background: #eee; }
+ /**
+   * Hide nested lists
+   */
+  .group-list, .sub-group-list, .sub-sub-group-list {
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .5s ease-in-out;
+    transition: max-height .5s ease-in-out;
+  }
+  .nav__list{
+    list-style-type: none;
+ }
+  .nav__list input[type=checkbox]:checked + label + ul { /* reset the height when checkbox is checked */
+  max-height: 1000px; }
+
+  label > span {
+    float: right;
+    -webkit-transition: -webkit-transform .65s ease;
+    transition: transform .65s ease;
+  }
+  .nav__list input[type=checkbox]:checked + label > span {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .nav input[type="checkbox"]:checked + label {
+    color: #333533;
     background-color: #f5cb5c;
   }
 
@@ -633,7 +707,9 @@ iframe.youtube{
     }
     h1, h2{
         font-size: 1.2rem;
-        line-height: 0rem;
+    }
+    p, a, li{
+        font-size: 1rem;
     }
     .dots-container .dot{
         width: 8px;
