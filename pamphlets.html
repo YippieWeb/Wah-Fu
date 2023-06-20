@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wah Fu Church of Christ</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/10f9b17392.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="assets/wah-fu-logo-white.png" alt="">
+                <p>基督教會</p>
+            </div>
+            <!-- main nav tabs -->
+            <nav class="menu">
+                <a href="index.html" class="menu-item">主頁</a>
+                <a href="purpose.html" class="menu-item">宗旨歷史</a>
+                <a href="chapters.html" class="menu-item">聚會地點</a>
+                <a href="worship.html" class="menu-item">主日崇拜</a>
+                <a href="sunday-school.html" class="menu-item">主日學</a>
+                <a href="https://www.dropbox.com/sh/dcx134jvpo5c6c2/AAACBL1xhzI0lvnG2eVYcCPEa" target="_blank" class="menu-item">照片集</a>
+                <a href="correspondence.html" class="menu-item">聖經課程</a>
+                <a href="course-download.html" class="menu-item is-active">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-arrow-right"></i>&nbsp;&nbsp; 課程下載</a>
+                <a href="booklets.html" class="menu-item">信仰小冊</a>
+                <a href="#" class="menu-item">鏈接</a>
+                <a href="#" class="menu-item">其他教會/團體消息</a>
+            </nav>
+            <!-- lang switch -->
+            <div class="language"><i class="fa-solid fa-earth-americas"></i>
+                <span class="lang zh is-active">中文</span>
+                <span class="lang en">EN</span>
+            </div>
+            <hr> <!-- line break -->
+            <!-- main nav tabs -->
+            <div class="details">
+                <span>聚會時間</span>
+                <p>星期日 上午十時正</p><br>
+                <span>聯絡我們</span>
+                <p>地址: 香港華富村華基樓618-619室</p>
+                <p>電話: 2551-3682</p>
+                <p>傳真: 2551-0033</p>
+                <p>電郵: info@wahfucoc.org.hk</p>
+                <a href="https://www.facebook.com/WahFuCOC/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://youtu.be/Bpt0TBb3ZpY" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <br><br>
+                <span>教會通告</span>
+                <p>查經班 代下32-34 Eric (延期舉行，另行通告)</p>
+                <a href="">本期週訊 &nbsp&nbsp<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <hr>
+            <span class="copyright">華富基督教會 © 2012-2023</span><br>
+            <span class="copyright"><a href="https://www.linkedin.com/in/jasmine-yyy/" target="_blank">Jasmine Yip</a> 
+                @ <a href="https://github.com/YippieWeb/" target="_blank">Yippie Web</a> 開發</span>
+        </aside>
+        <main class="content">
+            <div class="logo">
+                <img src="assets/wah-fu-logo-black.png" alt="">
+                <p>基督教會</p>
+            </div>
+            <div class="main-content">
+                <h1>信仰小冊</h1>
+                <p>幾十年來我們收集了不少各地基督教會撰寫的信仰小冊子，除了本地的，也有台灣、新加坡的，部分更是三十年代廣州印行的，現在逐一掃描，以廣流傳。</p><br>
+                <nav class="nav" role="navigation">
+                    <ul class="nav__list">
+                        <!-- 1. 聖經 -->
+                        <li class="nav__list__item">
+                            <input id="group-1" type="checkbox" hidden />
+                            <label for="group-1"><span class="fa fa-angle-right"></span>1. 聖經</label>
+                            <ul class="group-list">
+                            <li><a href="http://wahfucoc.org.hk/pamphlet/oldtestament.pdf" target="_blank">a. 舊約聖經 (台灣  信德藤牌的單張  年份不詳)</a></li>
+                            <li><a href="http://wahfucoc.org.hk/pamphlet/jwmcgarveyacts.pdf" target="_blank">b. 使徒行傳註釋 (廣州 1931年6月  香港  聖智出版社 [觀塘基督教會  1973年6月])</a></li>
+                            <li><a href="http://wahfucoc.org.hk/pamphlet/biblewritten.pdf" target="_blank">c. 聖經為什麼要寫成 (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                            </ul>
+                        </li>
+                        <!-- 2. 專題 -->
+                        <li class="nav__list__item">
+                            <input id="group-2" type="checkbox" hidden />
+                            <label for="group-2"><span class="fa fa-angle-right"></span>2. 專題</label>
+                            <ul class="group-list">
+                                <li><a href="#">a. 基督的生平與教訓（亞洲傳道學院印行　年份不詳）</a></li>
+                                <li><a href="#">b. 聖靈 (台灣  年份不詳)</a></li>
+                                <!-- c. 教會 -->
+                                <input id="sub-group-2" type="checkbox" hidden />
+                                <label for="sub-group-2"><span class="fa fa-angle-right"></span>c. 教會</label>
+                                <ul class="sub-group-list">
+                                <li><a href="#">i. 基督教會  他們是誰 (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                                <li><a href="#">ii. 基督的教會－－第一世紀教會研究大綱（亞洲傳道學院印行　年份不詳)</a></li>
+                                <li><a href="#">iii. 聖經中的教會 (新加坡  World Literature Publications 簡體  年份不詳) [內部參考]</a></li>
+                                <li><a href="#">iv. 新約聖經中記載的基督的教會 (Ed Wharton 著 田喬智譯 Airline Church of Christ, LA)</a></li>
+                                <li><a href="#">v. 教會合一之道 (台灣  信德藤牌的單張  年份不詳)</a></li>
+                                <li><a href="#">vi. 獨一的真教會 (出版時地不詳)</a></li>
+                                <li><a href="#">vii. 怎樣開始新約的基督教會 (出版時地不詳)</a></li>
+                                <li><a href="#">viii. 如何在你家中開始一間新約的教會 (香港 灣仔基督教會翻譯 1980年代)</a></li>
+                                </ul>
+                                <!-- d. 崇拜 -->
+                                <input id="sub-group-3" type="checkbox" hidden />
+                                <label for="sub-group-3"><span class="fa fa-angle-right"></span>d. 崇拜</label>
+                                <ul class="sub-group-list">
+                                <li><a href="#">i. 崇拜中用樂器的研究 (台灣  信德藤牌的單張  年份不詳)</a></li>
+                                </ul>
+                                <li><a href="#">e. 地獄像什麼?  (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                                </ul>
+                        </li>
+                        <!-- 3. 福音 -->
+                        <li class="nav__list__item">
+                        <input id="group-3" type="checkbox" hidden />
+                        <label for="group-3"><span class="fa fa-angle-right"></span>3. 福音</label>
+                        <ul class="group-list">
+                            <li><a href="#">a. 造物主存在嗎? (香港  灣仔基督教會翻譯  1982年)</a></li>
+                            <li><a href="#">b. 究竟有上帝否? (柯道心 Lewis T. Oldham 著，蘇天煌譯   廣州  基督原道書報出版所印行  序1932年)</a></li>
+                            <li><a href="#">c. 個人傳道手冊 (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                            <li><a href="#">d. 十字架的美麗 (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                            <li><a href="#">e. 我當怎樣行才可以得救? (台灣  信德藤牌的單張  年份不詳)</a></li>
+                            <li><a href="#">f. 為何不單單做基督徒? (香港  基督會  1959年3月)</a></li>
+                            <li><a href="#">g. 回到聖經  (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                            <li><a href="#">h. 真理（科學考古與聖經） (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                        </ul>
+                        </li> 
+                        <!-- 4. 造就 -->
+                        <li class="nav__list__item">
+                            <input id="group-4" type="checkbox" hidden />
+                            <label for="group-4"><span class="fa fa-angle-right"></span>4. 造就</label>
+                            <ul class="group-list">
+                                <li><a href="#">a. 前四十天 (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                                <li><a href="#">b. 如今我已在基督裡 (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                                <li><a href="#">c. 新造的人 (香港) [內部參考]</a></li>
+                            </ul>
+                        </li>
+                        <!-- 5. 生活 -->
+                        <li class="nav__list__item">
+                            <input id="group-5" type="checkbox" hidden />
+                            <label for="group-5"><span class="fa fa-angle-right"></span>5. 生活</label>
+                            <ul class="group-list">
+                                <li><a href="#">a. 婚姻與家庭 (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                                <li><a href="#">b. 完全委身 (香港  灣仔基督教會翻譯  1980年代)</a></li>
+                            </ul>
+                        </li>
+                        <!-- 6. 其他 -->
+                        <li class="nav__list__item">
+                            <input id="group-6" type="checkbox" hidden />
+                            <label for="group-6"><span class="fa fa-angle-right"></span>6. 其他</label>
+                            <ul class="group-list">
+                                <li><a href="#">a. 耶穌基督末世聖徒教會（摩門教）剖析 (葉永恒  1980年代) [內部參考]</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                  </nav>
+
+                  
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
