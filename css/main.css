@@ -37,7 +37,6 @@ p{
 
 a{
     color: #333533;
-    font-weight: 300;
 }
 
 a:hover{
@@ -466,6 +465,14 @@ iframe.youtube{
     list-style-type: none;
 }
 
+.lesson-list a{
+    text-decoration: none;
+}
+
+.lesson-list a:hover{
+    color: #333533;
+}
+
 .lesson-list li{
     padding: 10px 30px;
     background-color: #f8f8f8;
@@ -589,6 +596,16 @@ iframe.youtube{
   .nav input[type="checkbox"]:checked + label {
     color: #333533;
     background-color: #f5cb5c;
+  }
+
+
+  /* links page */
+  .links h2{
+    padding-top: 20px;
+  }
+
+  .links h1{
+      padding: 20px 0 0 0;
   }
 
 @media (max-width: 1024px){
