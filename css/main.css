@@ -508,7 +508,7 @@ iframe.youtube{
 }
 
 .address h2.last, .en .address h2{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .address label{
@@ -653,6 +653,9 @@ label > span{
     .chapter.wahfu .map { display: table-footer-group; } /* map on bottom*/
     .chapter.wahfu {
         padding-bottom: 0;
+    }
+    .locations h1{
+        padding: 45px 0 20px 0;
     }
 }
 
