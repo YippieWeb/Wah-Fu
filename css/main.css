@@ -627,11 +627,11 @@ label > span{
 
 /* links page styling */
 .links h2{
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
-.links h1{
-    padding: 30px 0;
+.links h2.first{
+    padding-top: 0;
 }
 
 /* responsive */
@@ -787,6 +787,9 @@ label > span{
     }
     .hymnal .item{
         width: 250px;
+    }
+    .links h2{
+        line-height: 2rem;
     }
 }
 
